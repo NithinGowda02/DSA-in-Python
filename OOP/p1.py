@@ -11,4 +11,5 @@ class car:
 Toyata = car("Fortuner",2023,500000,8)
 Maruthi_Suzuki = car("Omni",2005,18000,11)
 Toyata.display()       
-Maruthi_Suzuki.display()    
+Maruthi_Suzuki.display() 
+   
