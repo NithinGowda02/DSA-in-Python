@@ -2,9 +2,7 @@
  ○ Create a BankAccount class with private attributes for account _number and balance.
  ○ Add methods to check balance, deposit, and withdraw funds 
  ○ Try accessing the balance directly and observe the result
-2. Abstraction:
-Design a Phone class with methods to call_contact and take_picture . 
-Abstract away any internal processing details and focus on creating a user-friendly interface
+
 3. Inheritance:
 Create a base class ehicle with a start method. Then create a subclass Bike with an additional ride() method. Demonstrate how the Bike can use both start and ride
 4. Polymorphism:
@@ -21,14 +19,16 @@ class BankAccount:
 
     def deposit(self, add_amount):
         if self.__account_number == user_acc_num:
+            add_amount = int(input("Enter The Amount you wanted Deposit >> "))
             self.__balance += add_amount
         else:
             print(f"Invalid Account Number!. Try again With Valid Account Number")    
 
-    def withdraw_funds(self, withdrawed_ammount):
+    def withdraw_funds(self, withdrawal_amt):
         if self.__account_number == user_acc_num:
             if withdrawal_amt <= self.__balance:
-                self.__balance -= withdrawed_ammount
+                withdrawal_amt = int(input("Enter the Amount you wanted to Withdraw >> "))
+                self.__balance -= withdrawal_amt
             else:
                 print(f"Insufficient Funds. Your Balance >> {self.__balance}")    
         else:
@@ -45,13 +45,11 @@ while True:
     choice = int(input("Enter Your Choice [1.Deposit] [2.Withdrawal] [3.Check_Balance] [4.Exit] >> "))
     if choice == 1:
         user_acc_num = int(input("Enter your Account Number >> "))
-        deposited_amt = int(input("Enter the Amount you wanted to deposit >> "))
-        Acc_holder.deposit(deposited_amt)
+        Acc_holder.deposit(add_amount=0)
 
     elif choice == 2:
         user_acc_num = int(input("Enter your Account Number >> "))
-        withdrawal_amt = int(input("Enter the Amount you wanted to Withdraw >> "))
-        Acc_holder.withdraw_funds(withdrawal_amt)
+        Acc_holder.withdraw_funds(withdrawal_amt=0)
 
     elif choice == 3:
         user_acc_num = int(input("Enter your Account Number >> "))
