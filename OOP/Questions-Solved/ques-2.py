@@ -3,8 +3,7 @@
  ○ Add methods to check balance, deposit, and withdraw funds 
  ○ Try accessing the balance directly and observe the result
 
-3. Inheritance:
-Create a base class ehicle with a start method. Then create a subclass Bike with an additional ride() method. Demonstrate how the Bike can use both start and ride
+
 4. Polymorphism:
 D)
 Implement a Shape class and derive Circle and Rectangle classes with a method calculate_area . Each class shoul calculate area differently based on its shape.
