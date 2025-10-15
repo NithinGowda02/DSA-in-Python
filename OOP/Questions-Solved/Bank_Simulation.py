@@ -19,7 +19,8 @@ class Account(Bank):
             self._balance += amount
             print(f"Deposit Successfull. Updated Balance >> {self._balance}")
         else:
-            print("Invalid Account Number..! Try Again with Valid Account Number")     
+            print("Invalid Account Number..! Try Again with Valid Account Number")   
+            
     def Withdraw(self):
         Acc_num_input = int(input("Enter Your Account Number >> "))    
         if Bank_Record[holder_name] == Acc_num_input: 
@@ -30,7 +31,8 @@ class Account(Bank):
             else:
                 print(f"Insufficient Funds..!")
         else:
-            print("Invalid Account Number..! Try Again with Valid Account Number")         
+            print("Invalid Account Number..! Try Again with Valid Account Number")
+            
     def Check_Balance(self):
         Acc_num_input = int(input("Enter Your Account Number >> "))    
         if Bank_Record[holder_name] == Acc_num_input:
@@ -132,7 +134,6 @@ while True:
                 break        
             else:
                 print("Invalid Operation! Try Again")
-             
         break   
 
 
